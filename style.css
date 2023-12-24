@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+#gameArea {
+  width: 896px;
+  height: 512px;
+  background-image: url('images/football_pitch.png');
+  background-size: cover;
+  position: relative; /* Ensure this is set for positioning child elements */
+}
+
+.football {
+  width: 30px;
+  height: 30px;
+  background-image: url('images/football.png');
+  background-size: cover;
+  position: absolute; /* Ensure this is set for correct movement */
+}
+
+#player {
+  width: 45px;
+  height: 132px; /* Adjusted to maintain aspect ratio */
+  background-image: url('images/Harrison.png');
+  background-size: cover;
+  position: absolute; /* Ensure this is set for movement */
+}
+
+#scoreBoard {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: #333;
+}
